@@ -1,0 +1,79 @@
+h1 {
+  font-size: 32px;
+  border-bottom: 1px solid #ccc;
+  color: rgb(105, 91, 91);
+  margin: 15px 0;
+}
+
+.menu_principal a {
+  font-size: 20px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  max-height: 250px;
+}
+
+.destaque {
+  text-align: center;
+}
+.destaque img {
+  max-height: 150px;
+}
+.galeria {
+  text-align: center;
+  cursor: pointer;
+}
+
+.galeria p {
+  padding: 10px;
+}
+
+.galeria img {
+  max-height: 150px;
+  cursor: pointer;
+}
+
+.lista_fotos {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.anuncio {
+  text-align: center;
+  cursor: pointer;
+}
+
+.anuncio p {
+  padding: 10px;
+}
+
+.anuncio img {
+  max-height: 150px;
+  cursor: pointer;
+}
+
+.principal {
+  max-width: 100%;
+  max-height: 320px;
+}
+
+.thumb {
+  display: inline-block;
+  width: 80px;
+  max-height: 50px;
+  margin: 5px;
+}
+
+.thumb img {
+  max-width: 80px;
+  max-height: 50px;
+}
+
+.lista {
+  text-align: center;
+}
+.lista img {
+  max-height: 150px;
+}

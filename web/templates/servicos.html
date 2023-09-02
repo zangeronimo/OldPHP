@@ -1,0 +1,63 @@
+<hide_listar>
+<div>
+  <h1>Serviços</h1>
+  <div class="row">
+  	<repeat_servicos>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 lista">
+      <a href="/servicos/<param_codigo>/<param_url>" title="<param_nome>">
+        <img class="img-fluid rounded" src="https://webeditorapi.tudolinux.com.br<param_capa>" alt="<param_nome>" />
+        <p><param_nome></p>
+      </a>
+    </div>
+    </repeat_servicos>
+  </div>
+</div>
+</hide_listar>
+
+<hide_servico>
+<div>
+  <h1>
+    <a class="btn btn-primary btn-lg" href="/servicos" title="voltar para serviços"><i class="fa fa-chevron-left"></i></a>
+    <param_nome>
+  </h1>
+
+  <div class="row">
+    <hide_fotos>
+    <div class="col-12 col-md-5">
+      <div class="col-sm-12" style="text-align:center; height: 320px;">
+        <img class="img-fluid rounded principal" src="https://webeditorapi.tudolinux.com.br<param_foto>" id="img_principal" />
+      </div>
+
+	  <repeat_fotos>
+      <div class="col-2 thumb" style="margin:10px 0;">
+        <img src="https://webeditorapi.tudolinux.com.br<param_url>" class="img-fluid rounded" onclick="document.getElementById('img_principal').src='https://webeditorapi.tudolinux.com.br<param_url>'" style="cursor:pointer;" />
+      </div>
+      </repeat_fotos>
+
+    </div>
+    </hide_fotos>
+
+    <div class="col-md-7" style="font-size:16px;">
+      <div class="list-group">
+        <div class="list-group-item"><param_html></div>
+      </div>
+    </div>
+
+  </div>
+
+  <hide_video>
+  <div class="row">
+    <div class="col-12" style="margin-top: 15px;">
+      <iframe width="100%" height="350" src="<param_video>" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+  </hide_video>
+	
+  <div class="row" style="margin: 15px 0;">
+  	<div class="col-12">
+	  <div class="fb-comments" data-href="<param_CANONICAL>" data-numposts="15"></div>	
+  	</div>
+  </div>
+
+</div>
+</hide_servico>

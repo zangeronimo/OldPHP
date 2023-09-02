@@ -1,0 +1,33 @@
+<hide_listar>
+<div>
+  <h1>Galeria de Fotos</h1>
+
+  <div class="row">
+  	<repeat_galerias>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 galeria">
+      <a href="/galerias/<param_codigo>/<param_desc>" title="<param_nome>">
+        <img class="img-fluid rounded" src="https://webeditorapi.tudolinux.com.br<param_capa>" alt="<param_nome>" />
+        <p><param_nome></p>
+      </a>
+    </div>
+    </repeat_galerias>
+  </div>
+</div>
+</hide_listar>
+
+<hide_galeria>
+<div >
+  <h1>
+    <a class="btn btn-primary btn-lg" href="/galerias" title="voltar para galerias"><i class="fa fa-chevron-left"></i></a>
+    <param_album>
+  </h1>
+
+  <div class="row">
+  	<repeat_fotos>
+    <div class="col-12 col-md-6">
+      <img src="https://webeditorapi.tudolinux.com.br<param_url>" alt="" class="img-fluid rounded lista_fotos" />
+    </div>
+    </repeat_fotos>
+  </div>
+</div>
+</hide_galeria>

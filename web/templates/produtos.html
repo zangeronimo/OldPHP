@@ -1,0 +1,69 @@
+<hide_listar>
+<div>
+  <h1>Produtos <small>não encontrou? fale conosco (15) 99663-7635 - Rodrigo</small></h1>
+  <div class="row">
+    <repeat_produtos>
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 lista">
+      <a href="/produtos/<param_codigo>/<param_url>" title="<param_nome>">
+        <img src="https://webeditorapi.tudolinux.com.br<param_capa>" alt="<param_nome>" />
+        <p><param_nome></p>
+      </a>
+    </div>
+    </repeat_produtos>
+  </div>
+</div>
+</hide_listar>
+
+<hide_produto>
+<div>
+  <h1>
+    <a class="btn btn-primary btn-lg" href="/produtos" title="voltar para produtos"><i class="fa fa-chevron-left"></i></a>
+    <param_categoria>
+  </h1>
+
+  <div class="row">
+    <hide_fotos>
+    <div class="col-12 col-md-5">
+      <div class="col-sm-12" style="text-align:center; height: 320px;">
+        <img class="img-fluid rounded principal" src="https://webeditorapi.tudolinux.com.br<param_foto>" id="img_principal" />
+      </div>
+
+	  <repeat_fotos>
+      <div class="col-2 thumb" style="margin:10px 0;">
+        <img src="https://webeditorapi.tudolinux.com.br<param_url>" class="img-fluid rounded" onclick="document.getElementById('img_principal').src='https://webeditorapi.tudolinux.com.br<param_url>'" style="cursor:pointer;" />
+      </div>
+      </repeat_fotos>
+
+    </div>
+    </hide_fotos>
+
+      <div class="col-sm-12 col-md-7">
+        <p>&nbsp;</p>
+        <h2 style="text-transform:uppercase"><param_nome> <small style="color: #949090;"><param_fabricante></small></h2>
+        <p>&nbsp;</p>
+        <p style="font-size:18px;"><param_preco></p>
+        <p>&nbsp;</p>
+        <div class="list-group">
+          <div class="list-group-item">
+            <h3>Como comprar?</h3>
+            Compre com Rodrigo através do <strong>WhatsApp (15) 99663-7635</strong>
+            <br />ou pelo e-mail <a href="mailto:contato@agrovr.com.br">contato@agrovr.com.br</a>
+          </div>
+        </div>
+        <p>&nbsp;</p>
+      </div>
+
+      <div class="col-sm-12" style="font-size:16px;">
+        <div class="list-group">
+          <div class="list-group-item"><param_descricao></div>
+        </div>
+      </div>
+    </div>
+	
+  <div class="row" style="margin: 15px 0;">
+  	<div class="col-12">
+	  <div class="fb-comments" data-href="<param_CANONICAL>" data-numposts="15"></div>	
+  	</div>
+  </div>
+</div>
+</hide_produto>

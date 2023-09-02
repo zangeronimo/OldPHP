@@ -1,0 +1,137 @@
+<div style="margin: 10px 0;">
+	<hide_banners>
+	<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	  	<repeat_banners>
+	    <div class="carousel-item <hider_active> active </hider_active>">
+	    	<hider_url><a href="<param_url>"></hider_url>
+	        <img class="img-fluid rounded banner" src="https://webeditorapi.tudolinux.com.br<param_img>" alt="<param_nome>">
+	        <hider_url></a></hider_url>
+	    </div>
+	    </repeat_banners>
+	  </div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+	</hide_banners>
+</div>
+
+
+<div class="row">
+	<div class="col-12">
+		<div class="list-group">
+			<a href="/produtos" class="list-group-item active">
+			  Produtos (ver todos)
+      </a>
+    </div>
+    <div class="list-group-item" style="text-align: center;">
+      <div class="row">
+      	<repeat_produtos>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 destaque">
+          <a href="/produtos/<param_codigo>/<param_url>" title="<param_nome>">
+            <img class="img-fluid rounded" alt="<param_nome>" src="https://webeditorapi.tudolinux.com.br<param_capa>">
+            <p class="text-center"><param_nome></p>
+          </a>
+        </div>
+        </repeat_produtos>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6" style="margin: 15px 0;">
+    <div class="list-group">
+        <a href="/artigos" class="list-group-item active">
+          Artigos (ver todos)
+        </a>
+        <repeat_artigos>
+        <a 
+           href="/artigos/<param_codigo>/<param_url>"
+           title="<param_nome>"
+           class="list-group-item list-group-item-action">
+
+          <param_datahora> - <param_nome>
+
+        </a>
+        </repeat_artigos>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6" style="margin: 15px 0;">
+    <div class="panel panel-primary">
+      <a class="list-group-item active" href="https://www.facebook.com/Agro-VR-Caprinos-e-Ovinos-304887349932766" title="Curta nossa página no Facebook">Curta nossa página no Facebook</a>
+      <div class="list-group-item text-center" style="margin:0; padding:15px 0; background-color:#fafafa;">
+          <blockquote cite="https://www.facebook.com/Agro-VR-Caprinos-e-Ovinos-304887349932766/" class="fb-xfbml-parse-ignore">
+	        	<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FAgro-VR-Caprinos-e-Ovinos-304887349932766/%2F&tabs&width=340&height=214&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=235505660319064" width="340" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+	        </blockquote>
+          
+          <fb-page href="https://www.facebook.com/Agro-VR-Caprinos-e-Ovinos-304887349932766/"></fb-page>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12 col-md-6" style="margin: 15px 0;">
+    <div class="list-group">
+      <a href="/anuncios" class="list-group-item active">
+        Anúncios (ver todos)
+      </a>
+    </div>
+    <div class="list-group-item" style="text-align: center;">
+      <div class="row">
+        <repeat_anuncios>
+        <div class="col-12 col-sm-6 destaque">
+          <a href="/anuncios/<param_codigo>/<param_url>" title="<param_nome>">
+            <img class="img-fluid rounded" alt="<param_nome>" src="https://webeditorapi.tudolinux.com.br<param_capa>">
+            <p class="text-center"><param_nome></p>
+          </a>
+        </div>
+        </repeat_anuncios>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-12 col-md-6" style="margin: 15px 0;">
+    <div class="list-group">
+        <div class="list-group-item active">Fique por dentro das novidades.</div>
+        <form method="post" autocomplete="off">
+        <hide_newsletter>
+        <div class="list-group-item list-group-item-action">
+          <div>
+              <label>Nome</label>
+              <input type="text" name="nome" required="required" class="form-control" placeholder="Seu nome" />
+          </div>
+
+          <div style="margin-top: 13px;">
+              <label>E-mail</label>
+              <input type="text" name="email" required="required" class="form-control" placeholder="Seu e-mail" />
+          </div>
+
+          <div style="margin-top:14px; margin-bottom: 10px;">
+              <button type="submit" class="btn btn-success form-control"><i class="fa fa-check"></i> Cadastrar</button>
+          </div>
+        </div>
+        </hide_newsletter>
+        </form>
+
+		<hide_newsletter_ok>
+        <div class="list-group-item list-group-item-action">
+          <div class="alert  alert-success  alert-dismissible" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <span class="glyphicon glyphicon-ok"></span> Cadastro realizado com sucesso!
+          </div>
+          <p>Obrigado por realizar o cadastro com a AgroVR.</p>
+          <p>Novidades e Promoções serão enviadas por e-mail.</p>
+        </div>
+        </hide_newsletter_ok>
+    </div>
+  </div>
+</div>
